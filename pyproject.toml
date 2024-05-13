@@ -1,0 +1,26 @@
+[project]
+name = "aider-mokumoku"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Yusuke Saito", email = "info@ysaito.dev" }
+]
+dependencies = [
+    "aider-chat>=0.34.0",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/aider_mokumoku"]
